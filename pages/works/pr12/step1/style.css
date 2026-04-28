@@ -67,3 +67,16 @@ body{
     }
 }
 
+
+@media screen and (max-width:800px) {
+    .card{
+        flex-direction: column;
+        .information{
+            margin-left: 0px;
+        }
+    }
+    *{
+        color: white;
+        background-color: #333;
+    }
+}
