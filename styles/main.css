@@ -1,0 +1,91 @@
+body{
+    background-color: #333;
+    color: white;
+    align-items: center;
+    text-align: center;
+    /*Шрифт сменён на самый лучший в мире*/
+    /**/font-family: 'Comic Sans MS';/**/
+    /*MS Comic Sans - шрифт мира!!!*/
+    /*ЛУЧШИЙ ШРИФТ В МИРЕ*/
+}
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 1%;
+}
+footer{
+    height: 100px;
+}
+nav ul, nav ul li{
+    display: flex;
+    font-size: 1vw;
+}
+nav ul li:hover{
+    transition: all 200ms;
+    transform: translateY(-2px);
+}
+li{
+    margin: 10px;
+}
+a{
+    color: #aaa;
+    text-decoration: none;
+}
+.frame, article{
+    background-color: #222;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px 25%;
+}
+main>article:hover{
+    background-color: #282828;
+}
+.v, article{
+    display: flex;
+    flex-direction: column;
+}
+.h{
+    display: flex;
+    flex-direction: row;
+}
+.h, .v, article{
+    align-items: center;
+    transition: .5s all;
+    justify-content: space-around;
+}
+
+.frame a img,
+.frame img,
+td img{
+    width: 20vw;
+    margin: 20px;
+}
+
+article>img{
+    width: 25vw;
+}
+.txt-justify{
+    text-align: justify;
+}
+.yellow-bg{
+    display: block;
+    background-color: #aca20e60;
+    color: #f90;
+    padding: 5px 50px;
+}
+.code{
+    background-color: #444;
+    border-radius: 5px;
+}
+ol li a{
+    color: #f90;
+}
+table{
+    border: #fff dotted 1px;
+    border-collapse: collapse;
+}
+.work img{
+    max-width: 100%;
+    width: auto;
+}

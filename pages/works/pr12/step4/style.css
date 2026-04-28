@@ -1,0 +1,25 @@
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* По умолчанию — сетка из колонок */
+   gap: 15px; /* Отступы между фото */
+   padding: 15px;
+}
+
+.gallery img {
+   width: 100%;
+   height: auto; /* Сохраняем пропорции */
+   display: block;
+   border-radius: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    /*3 колонки*/
+}
+@media (max-width: 992px) {
+    /*2 колонки*/
+}
+@media (max-width: 768px) {
+    /*1 колонка*/
+}
+

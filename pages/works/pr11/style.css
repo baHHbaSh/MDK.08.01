@@ -1,0 +1,93 @@
+main{
+    background-color: #FFF;
+    color: #000;
+}
+header button{
+    color: white;
+    width: 300px;
+    border: none;
+    font-size: 24px;
+    background-color: #333;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 5px black;
+    background-color: #FEFEFE;
+    margin: 10px;
+    text-align: justify;
+    width: calc(100vw / 4 - 30px);
+    min-height: 70vh;
+    border-radius: 20px;
+    font-size: 24px;
+    transition: all .5s;
+}
+.card:hover{
+    transform:translateY(10px);
+}
+.img{
+    width: 100%;
+    aspect-ratio: 1;
+    background-size: cover;
+}
+.square{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: #FDFDFD;
+}
+.hor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buy{
+    background-color: #0000;
+    color: orangered;
+    border: none;
+}
+.price::after{
+    content: '₽';
+}
+.price{
+    color: #F44;
+    margin: 0 2%;
+}
+.price-list{
+    justify-content: flex-start;
+}
+.not-price{
+    color: black;
+    text-decoration: line-through;
+}
+.like{
+    font-size: 20px;
+}
+.name{
+    font-weight: normal;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.i1{
+    background-image: url(img/1.jpg);
+}
+.i2{
+    background-image: url(img/2.jpg);
+}
+.i3{
+    background-image: url(img/3.jpg);
+}
+.i4{
+    background-image: url(img/4.jpeg);
+}
+.i5{
+    background-image: url(img/5.jpg);
+}
+.i6{
+    background-image: url(img/6.jpeg);
+}
+.i7{
+    background-image: url(img/7.jpeg);
+}

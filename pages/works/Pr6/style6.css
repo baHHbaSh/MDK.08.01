@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*Божественный шрифт*/
+    font-family: 'Comic Sans MS';
+}
+
+body {
+    background-color: #333;
+    color: #FFF;
+    line-height: 1.6;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #4A5;
+    color: #152;
+}
+
+header {
+    background-color: #222;
+    height: 50px;
+    /*Чтобы не было сдвига по фазе*/
+    position: sticky;
+    top: 0;
+    /*ZZZ_ГОЙДА_ZZZ*/
+    z-index: 10;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #4A5;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    /*Мошеническая схема 1*/
+    flex: 1;
+}
+
+section {
+    background-color: #444;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #4A5;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4A5;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4A5;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #DDD;
+}
+
+article {
+    background-color: #555;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #4A5;
+}
+
+article .date {
+    display: block;
+    color: #AAA;
+    margin-bottom: 15px;
+}
+aside {
+    background-color: #444;
+    padding: 25px;
+    border-radius: 8px;
+    /*Мошеническая схема 2*/
+    flex: 0 0 280px;
+    align-self: flex-start;
+}
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: block;
+}
+footer {
+    background-color: #222;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 3px solid #4A5;
+}
+
+footer h3 {
+    color: #4A5;
+}
