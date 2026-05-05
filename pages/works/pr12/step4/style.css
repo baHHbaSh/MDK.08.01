@@ -14,12 +14,17 @@
 
 /* Адаптивность */
 @media (max-width: 1200px) {
-    /*3 колонки*/
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media (max-width: 992px) {
-    /*2 колонки*/
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (max-width: 768px) {
-    /*1 колонка*/
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-
