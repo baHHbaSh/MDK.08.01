@@ -30,3 +30,32 @@ body {
   margin: 5px 0;
 }
 
+@media (max-width: 768px) {
+  .nav-links{
+    top: -100%;
+    position: absolute;
+    left: 0px;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    background: #333;
+    transition: all .5s ease;
+    opacity: 0;
+    font-size: 2em;
+  }
+  .nav-links.active{
+    top: 0%;
+    opacity: 1;
+    transition-delay: .5s;
+    pointer-events: auto;
+  }
+  .nav-links li a{
+    padding: 18px 10px;
+  }
+  .burger{
+    display: block;
+    z-index: 100;
+  }
+}
