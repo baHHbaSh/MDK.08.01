@@ -6,4 +6,28 @@ p, h1{
 }
 .content{
 	max-width:900px; margin:0 auto; padding:0 30px;
+	align-items: center;
+}
+.bridge-night{
+	display: block;
+	width: 100%;
+	margin-left: 0px;
+}
+.bridge-day{
+	float: left;
+	margin: 20px;
+	width: max(200px, 40%);
+}
+@media screen and (min-width:700px) {
+	.bridge-night{
+		width: 600px;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.bridge-day{
+		width: 100%;
+		margin-left: 0;
+	}
 }
