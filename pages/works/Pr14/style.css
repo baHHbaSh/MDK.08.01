@@ -1,0 +1,151 @@
+body {
+    color: #fff;
+    font: 600 24px;
+}
+.box {
+    background: #2db34a;
+    border-radius: брx;
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 95px;
+}
+.box:hover {
+    background: #ff7b29;
+}
+
+.box2 {
+    background: #2db34a;
+    border-radius: брx;
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 95px;
+}
+.box2:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+}
+figure {
+    margin: 0;
+}
+.original,
+.box {
+    border-radius: бpx;
+}
+.original{
+    background: #eaeaed;
+    border: 1px dashed #cecfd5;
+    float: left;
+    margin: 12px 15px;
+}
+.box {
+    background: #2db34a;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    width: 95px;
+}
+.spin {
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.spin:hover {
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotateY (Odeg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.box-1{
+    transform: translateX(-10px);
+}
+.box-2 {
+    transform: translateY(25%);
+}
+.box-3{
+    transform: translate(-10px, 25%);
+}
+.card-container {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+    margin-top: 150px;
+}
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card .side {
+    backface-visibility: hidden;
+    border-radius: брx;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+.card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+@keyframes slide {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50% {
+        left: 244px;
+        top: 100px;
+    }
+    100% {
+        left: 488px;
+        top: 0;
+    }
+}
+.stage {
+    background: #eaeaed;
+    border-radius: 6px;
+    height: 150px;
+    position: relative;
+    min-width: 538px;
+}
+.stage:hover .ball {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+}
+.ball {
+    background: #2db34a;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+figure {
+    margin: 0;
+}
