@@ -1,0 +1,25 @@
+:root{
+    --bg: #1a1a1a;
+    --fg: #fff;
+    --akcent: #00a896;
+    --dop: #ffd166;
+}
+@font-face {
+    font-family: "Playfair";
+    src: url('/pages/works/Pr17/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: "Inter";
+    src: url('/pages/works/Pr17/fonts/Inter/Inter-VariableFont.ttf');
+}
+*{
+    font-family: 'Inter';
+    transition: all .5s;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Playfair';
+}
+body{
+    padding: 0;
+    margin: 0;
+}

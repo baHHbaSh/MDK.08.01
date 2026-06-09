@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeRestaurante</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="LeRestaurante">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a class="header__nav-link header__nav-link--active">Price List</a></li>
+                    <li><a class="header__nav-link">Opening Hours</a></li>
+                    <li><a class="header__nav-link">About Us</a></li>
+                    <li><a class="header__nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="h">
+            <div class="frame caps">
+                <p>For meat lovers</p>
+                <button class="h-but caps">Full menu</button>
+            </div>
+            <div class="frame caps" style="transform: translateY(-20px);">
+                <p>Vegeterian & vegan</p>
+                <button class="h-but caps">Full menu</button>
+            </div>
+            <div class="frame caps">
+                <p>See our secrets</p>
+                <button class="h-but caps">Take me there</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="menu">
+        <div class="container">
+            <h2 class="menu__title">Daily Menu</h2>
+            <p class="menu__subtitle">Show Vegan Menu Only</p>
+
+            <div class="menu__grid">
+                
+                <div class="menu__item">
+                    <div class="menu__icon">
+                        <img src="img/Vrstva 9.png" alt="Meat">
+                    </div>
+                    <div class="menu__info">
+                        <div class="menu__name-row">
+                            <span class="menu__name">RAW MEAT WITH BBQ</span>
+                            <span class="menu__price">$100</span>
+                        </div>
+                        <p class="menu__description">ADDONS: A, B, C</p>
+                    </div>
+                </div>
+
+                
+                <div class="menu__item">
+                    <div class="menu__icon">
+                        <img src="img/Vrstva 8.png" alt="Trout">
+                    </div>
+                    <div class="menu__info">
+                        <div class="menu__name-row">
+                            <span class="menu__name">FRESH TROUT</span>
+                            <span class="menu__price">$110</span>
+                        </div>
+                        <p class="menu__description">ADDONS</p>
+                    </div>
+                </div>
+
+                
+                <div class="menu__item">
+                    <div class="menu__icon">
+                        <img src="img/Vrstva 12.png" alt="Soup">
+                    </div>
+                    <div class="menu__info">
+                        <div class="menu__name-row">
+                            <span class="menu__name">MUSHROOM SOUP</span>
+                            <span class="menu__price">$15</span>
+                        </div>
+                        <p class="menu__description">ADDONS</p>
+                    </div>
+                </div>
+
+                
+                <div class="menu__item">
+                    <div class="menu__icon">
+                        <img src="img/Vrstva 11.png" alt="Chicken">
+                    </div>
+                    <div class="menu__info">
+                        <div class="menu__name-row">
+                            <span class="menu__name">CHICKEN WITH POTATOES</span>
+                            <span class="menu__price">$28</span>
+                        </div>
+                        <p class="menu__description">ADDONS: A, B, C</p>
+                    </div>
+                </div>
+
+                
+                <div class="menu__item">
+                    <div class="menu__icon">
+                        <img src="img/Vrstva 10.png" alt="Pasta">
+                    </div>
+                    <div class="menu__info">
+                        <div class="menu__name-row">
+                            <span class="menu__name">PASTA WITH TOMATO PUREE</span>
+                            <span class="menu__price">$35</span>
+                        </div>
+                        <p class="menu__description">ADDONS</p>
+                    </div>
+                </div>
+
+                
+                <div class="menu__item">
+                    <div class="menu__icon">
+                        <img src="img/Vrstva 7.png" alt="Salad">
+                    </div>
+                    <div class="menu__info">
+                        <div class="menu__name-row">
+                            <span class="menu__name">SALAD WITH BEETROOT</span>
+                            <span class="menu__price">$17</span>
+                        </div>
+                        <p class="menu__description">ADDONS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__featured">
+                <div class="menu__featured-info">
+                    <p style="color: var(--color-accent); font-size: 12px; margin-bottom: 5px;">ONLINE MENU</p>
+                    <h3 class="menu__featured-title">SPAGHETTI WITH FRESH TOMATOES AND DRESSING</h3>
+                    <p class="menu__featured-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, mi eget laoreet venenatis.</p>
+                    <a href="#" class="button">Order</a>
+                    <a href="#" class="button" style="background: transparent; color: var(--color-accent); border: 1px solid var(--color-accent); margin-left: 10px;">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="location">
+        <div class="location__overlay"></div>
+        <div class="container">
+            <div class="location__box">
+                <h2 class="location__title">WHERE TO FIND US?</h2>
+                <div class="h">
+                     <img src="img/logo.png" style="width: 30px; margin-right: 10px;" alt="Logo">
+                     <strong>LeRestaurante</strong>
+                     <p class="location__address">
+                         Nisgus 128<br>
+                         Pardubice, 530 01
+                     </p>
+                </div>
+                <a href="#" class="button">Show On A Map</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h4>About Us</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">News & Updates</a></li>
+                    <li><a href="#">Franchise</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>For You</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Useful Links</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Map of Web</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Recent App</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Sign up to our newsletter</h4>
+                <div class="footer__subscribe">
+                    <input type="email" class="footer__input" placeholder="Your Email">
+                    <button class="button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
