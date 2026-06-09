@@ -8,6 +8,9 @@ body{
     /*MS Comic Sans - шрифт мира!!!*/
     /*ЛУЧШИЙ ШРИФТ В МИРЕ*/
 }
+*{
+    transition: all 500ms ease-in-out;
+}
 header, footer{
     display: flex;
     justify-content: space-between;
@@ -17,13 +20,20 @@ header, footer{
 footer{
     height: 100px;
 }
+footer:hover{
+    filter: blur(10px);
+    opacity: 0;
+}
 nav ul, nav ul li{
     display: flex;
     font-size: 1vw;
 }
+nav ul li{
+    border-bottom: #eee 1px solid;
+}
 nav ul li:hover{
-    transition: all 200ms;
     transform: translateY(-2px);
+    border-bottom: #2f0 3px solid;
 }
 li{
     margin: 10px;
@@ -35,12 +45,35 @@ a{
 .frame, article{
     background-color: #222;
     border-radius: 20px;
-    padding: 50px;
-    margin: 20px 25%;
+    padding: 10px;
+    margin: 30px 10px;
+    filter: blur(1px);
 }
+
+.frame:hover, article:hover{
+    transform: scale(1.05);
+    transform: translateY(-15px);
+    box-shadow: #2f0 0 15px 20px;
+    filter: blur(0px);
+}
+
+article{
+    margin: 10px 20vw;
+    color: #aaa;
+}
+
 main>article:hover{
     background-color: #282828;
 }
+
+.gradient-text {
+    background: linear-gradient(45deg, #2f0, #7bfed0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
 .v, article{
     display: flex;
     flex-direction: column;
@@ -88,4 +121,19 @@ table{
 .work img{
     max-width: 100%;
     width: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 750px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
 }
