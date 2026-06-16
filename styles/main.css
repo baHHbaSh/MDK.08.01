@@ -47,14 +47,12 @@ a{
     border-radius: 20px;
     padding: 10px;
     margin: 30px 10px;
-    filter: blur(1px);
 }
 
 .frame:hover, article:hover{
     transform: scale(1.05);
-    transform: translateY(-15px);
-    box-shadow: #2f0 0 15px 20px;
-    filter: blur(0px);
+    transform: translateY(-10px);
+    box-shadow: #2f0 0 15px 30px;
 }
 
 article{
