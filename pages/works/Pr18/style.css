@@ -1,0 +1,30 @@
+:root{
+    --bg: #eee;
+    --fg: #111;
+    --accent: #4ea;
+    --dop: #fb2;
+}
+
+*{
+    transition: all 1s;
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    color: var(--fg);
+    background-color: var(--bg);
+    padding: 0;
+    margin: 0;
+}
+
+script, head{
+    display: none;
+}
+
+.h{
+    flex-direction: row;
+}
+.v{
+    flex-direction: column;
+}
