@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель администратора — Корочки.есть</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <img src="img/image01.webp" alt="Логотип Корочки.есть"/>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#zps">
+                        Запись на курс
+                    </a>
+                </li>
+                <li>
+                    <a href="auth.html">
+                        Логин
+                    </a>
+                </li>
+                <li>
+                    <a href="req.html">
+                        Мои заявки
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        Админ панель [DEBUG]
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="v center p m">
+            <h1>Панель администратора</h1>
+            <p>Управление заявками пользователей. Смена статуса происходит после проверки.</p>
+
+            <div class="table-wrapper">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID заявки</th>
+                            <th>Пользователь</th>
+                            <th>Курс</th>
+                            <th>Дата начала</th>
+                            <th>Способ оплаты</th>
+                            <th>Статус</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>ivanov_ii</td>
+                            <td>Веб-разработка</td>
+                            <td>2026-07-10</td>
+                            <td>Перевод по номеру</td>
+                            <td><span class="status status-new">Новая</span></td>
+                            <td class="admin-actions">
+                                <select class="status-select p" aria-label="Изменить статус">
+                                    <option selected>Новая</option>
+                                    <option>Идёт обучение</option>
+                                    <option>Обучение завершено</option>
+                                </select>
+                                <button type="button" class="btn-primary btn-sm" disabled>Обновить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>petrova_ma</td>
+                            <td>Аналитика данных</td>
+                            <td>2026-08-01</td>
+                            <td>Наличными</td>
+                            <td><span class="status status-progress">Идёт обучение</span></td>
+                            <td class="admin-actions">
+                                <select class="status-select p" aria-label="Изменить статус">
+                                    <option>Новая</option>
+                                    <option selected>Идёт обучение</option>
+                                    <option>Обучение завершено</option>
+                                </select>
+                                <button type="button" class="btn-primary btn-sm" disabled>Обновить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>sidorov_dv</td>
+                            <td>Графический дизайн</td>
+                            <td>2026-06-15</td>
+                            <td>Перевод по номеру</td>
+                            <td><span class="status status-done">Обучение завершено</span></td>
+                            <td class="admin-actions">
+                                <select class="status-select p" aria-label="Изменить статус">
+                                    <option>Новая</option>
+                                    <option>Идёт обучение</option>
+                                    <option selected>Обучение завершено</option>
+                                </select>
+                                <button type="button" class="btn-primary btn-sm" disabled>Обновить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>kuznetsov_an</td>
+                            <td>Мобильная разработка</td>
+                            <td>2026-09-05</td>
+                            <td>Наличными</td>
+                            <td><span class="status status-new">Новая</span></td>
+                            <td class="admin-actions">
+                                <select class="status-select p" aria-label="Изменить статус">
+                                    <option selected>Новая</option>
+                                    <option>Идёт обучение</option>
+                                    <option>Обучение завершено</option>
+                                </select>
+                                <button type="button" class="btn-primary btn-sm" disabled>Обновить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="h footer-content">
+            <div class="v">
+                <p>Телефон: +7 (800) 555 35-35</p>
+                <p><a href="mailto:help@kor.net">Почта: help@kor.net</a></p>
+            </div>
+            <div class="v">
+                <p>© 2026 Корочки.есть</p>
+                <p><a href="#">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

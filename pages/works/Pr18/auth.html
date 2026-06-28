@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корочки.есть</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <img src="img/image01.webp"/>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#zps">
+                        Запись на курс
+                    </a>
+                </li>
+                <li>
+                    <a href="auth.html">
+                        Логин
+                    </a>
+                </li>
+                <li>
+                    <a href="req.html">
+                        Мои заявки
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        Админ панель [DEBUG]
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="h">
+            <a href="#log" class="p"><button>Авторизация</button></a>
+            <a href="#reg" class="p"><button>Регистрация</button></a>
+        </section>
+        <section id="log">
+            <h1>Логин</h1>
+            <form>
+                <input required type="email" placeholder="xxx@xxx.xxx"/>
+                <input required type="password" placeholder="Пароль"/>
+                <input type="submit" value="Логин"/>
+            </form>
+        </section>
+        <section id="reg">
+            <h1>Регистрация</h1>
+            <form>
+                <input required type="email" placeholder="xxx@xxx.xxx"/>
+                <input required type="text" placeholder="Фамилия Имя Отчествович"/>
+                <input required type="text" placeholder="+7 (919) 123 45-46"/>
+                <input required type="password" placeholder="Пароль"/>
+                <input required type="password" placeholder="Повторите пароль"/>
+                <input type="submit" value="Регистрация"/>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="h footer-content">
+            <div class="v">
+                <p>Телефон: +7 (800) 555 35-35</p>
+                <p><a href="mailto:help@kor.net">Почта: help@kor.net</a></p>
+            </div>
+            <div class="v">
+                <p>© 2026 Корочки.есть</p>
+                <p><a href="#">Политика конфиденциальности</a></p>
+                <p><a href="#">Публичная оферта</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

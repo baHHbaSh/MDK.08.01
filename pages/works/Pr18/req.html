@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои заявки — Корочки.есть</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <img src="img/image01.webp" alt="Логотип Корочки.есть"/>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#zps">
+                        Запись на курс
+                    </a>
+                </li>
+                <li>
+                    <a href="auth.html">
+                        Логин
+                    </a>
+                </li>
+                <li>
+                    <a href="req.html">
+                        Мои заявки
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        Админ панель [DEBUG]
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="v center p m">
+            <h1>Мои заявки</h1>
+            <p>Здесь отображаются все ваши заявки на обучение и их текущий статус.</p>
+            
+            <div class="table-wrapper">
+                <table class="requests-table">
+                    <thead>
+                        <tr>
+                            <th>Номер заявки</th>
+                            <th>Курс</th>
+                            <th>Дата начала</th>
+                            <th>Способ оплаты</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>Веб-разработка</td>
+                            <td>2026-07-10</td>
+                            <td>Перевод по номеру телефона</td>
+                            <td><span class="status status-new">Новая</span></td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>Аналитика данных (Data Science)</td>
+                            <td>2026-08-01</td>
+                            <td>Наличными</td>
+                            <td><span class="status status-progress">Идёт обучение</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="v center p m">
+            <h2>Оставить отзыв</h2>
+            <p>Поделитесь впечатлениями о качестве образовательных услуг.</p>
+            <form action="#" method="post" class="v p m review-form">
+                <label for="course-review">Курс</label>
+                <select id="course-review" name="course" required class="p m">
+                    <option value="" disabled selected>Выберите курс</option>
+                    <option value="web">Веб-разработка</option>
+                    <option value="data">Аналитика данных</option>
+                </select>
+
+                <label for="review-text">Ваш отзыв</label>
+                <textarea id="review-text" name="review" rows="5" required placeholder="Опишите свои впечатления..." class="p m"></textarea>
+
+                <button type="submit" class="btn-primary p m">Отправить отзыв</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="h footer-content">
+            <div class="v">
+                <p>Телефон: +7 (800) 555 35-35</p>
+                <p><a href="mailto:help@kor.net">Почта: help@kor.net</a></p>
+            </div>
+            <div class="v">
+                <p>© 2026 Корочки.есть</p>
+                <p><a href="#">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
